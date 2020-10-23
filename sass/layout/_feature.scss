@@ -1,0 +1,38 @@
+.feature {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.feature-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		width: 270px;
+	}
+	&__icon {
+		display: flex;
+		width: 270px;
+		height: 120px;
+		justify-content: center;
+		align-items: center;
+		background-color: $second-color;
+		border-radius: 4px;
+	}
+	&__svg {
+		width: 70px;
+		height: 70px;
+	}
+	.section-title {
+		font-size: 14px;
+		line-height: 1.1; /* 16 */
+		text-transform: uppercase;
+		margin-top: 30px;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	&__description {
+		font-size: 14px;
+		line-height: 1.7; /* 24 */
+	}
+}

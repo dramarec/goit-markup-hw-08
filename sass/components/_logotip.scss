@@ -1,0 +1,39 @@
+.logotip {
+	/* outline: 1px solid tomato; */
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 25px;
+
+	color: $title-text-color;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.1; /* 16 */
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	transition-duration: 250ms;
+	transition-timing-function: $timing-function;
+}
+
+.navigation .logotip,
+.footer .logotip {
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2; /* 31 */
+	letter-spacing: 0.03em;
+}
+
+.logotip-accent {
+	outline-color: #2195f3;
+	color: $accent-color;
+}
+
+.footer .logotip {
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+.footer__logotip-color {
+	// outline-color: #2195f3;
+	color: $hero-color;
+}

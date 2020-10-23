@@ -1,0 +1,117 @@
+.portfolio {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	border-top: 1px solid #ececec;
+}
+
+.button-list {
+	display: flex;
+	justify-content: center;
+
+	& .item + .item {
+		margin-left: 6px;
+	}
+	& .btn {
+		display: inline-block;
+		padding: 6px 22px;
+		border-radius: 4px;
+		color: $title-text-color;
+		background-color: $second-color;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 26px; /* 1.6 */
+		border: none;
+		margin-bottom: 50px;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover,
+		&:focus {
+			color: $hero-color;
+			background-color: $accent-color;
+			box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+			cursor: pointer;
+			border-radius: 4px;
+		}
+	}
+}
+
+.portfolio-examples {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio-list {
+	background: #ffffff;
+	box-sizing: border-box;
+	margin-right: 30px;
+	width: calc((100% - 60px) / 3);
+	overflow: hidden;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+	&:not(:nth-last-child(-n + 3)) {
+		margin-bottom: 30px;
+	}
+	&:hover {
+		background: #ffffff;
+		box-sizing: border-box;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+		cursor: pointer;
+	}
+}
+
+.portfolio-link {
+	text-decoration: none;
+	overflow: hidden;
+
+	.portfolio-box {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.overlay {
+			/* outline: 1px solid tomato; */
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(33, 150, 243, 0.9);
+			opacity: 0;
+			transform: translateY(100%);
+			font-size: 18px;
+			line-height: 28px;
+			padding: 63px 24px;
+			color: #ffffff;
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		}
+
+		&:hover .overlay {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.card-content {
+		position: relative;
+		background: #ffffff;
+		border-right: 1px solid #eeeeee;
+		border-bottom: 1px solid #eeeeee;
+		border-left: 1px solid #eeeeee;
+		padding: 20px 24px;
+		.title {
+			font-weight: 700;
+			color: $title-text-color;
+			font-size: 18px;
+			line-height: 2; /* 36 */
+			letter-spacing: 0.06em;
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.9; /* 30 */
+			color: #757575;
+		}
+	}
+}
