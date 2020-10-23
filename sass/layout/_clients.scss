@@ -1,60 +1,62 @@
-.clients {
-	padding-top: 94px;
-	padding-bottom: 94px;
-	&-list {
-		display: flex;
-		justify-content: center;
+@media (min-width: 1140px) {
+	.clients {
+		padding-top: 94px;
+		padding-bottom: 94px;
+		&-list {
+			display: flex;
+			justify-content: center;
+		}
+		&-list .clients-item:not(:last-child) {
+			margin-right: 30px;
+		}
+		&-link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #afb1b8;
+			border: 1px solid #afb1b8;
+			border-radius: 4px;
+			width: 170px;
+			height: 90px;
+			/* transition-property: background-color; */
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			&:hover {
+				border: 1px solid #2196f3;
+			}
+			&:hover .client-logo {
+				color: $accent-color;
+			}
+		}
 	}
-	&-list .clients-item:not(:last-child) {
-		margin-right: 30px;
-	}
-	&-link {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: #afb1b8;
-		border: 1px solid #afb1b8;
-		border-radius: 4px;
-		width: 170px;
-		height: 90px;
-		/* transition-property: background-color; */
+
+	.client-logo {
+		fill: currentColor;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		&:hover {
-			border: 1px solid #2196f3;
+		&.one {
+			width: 44px;
+			height: 49px;
 		}
-		&:hover .client-logo {
-			color: $accent-color;
+		&.two {
+			width: 41px;
+			height: 43px;
 		}
-	}
-}
-
-.client-logo {
-	fill: currentColor;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	&.one {
-		width: 44px;
-		height: 49px;
-	}
-	&.two {
-		width: 41px;
-		height: 43px;
-	}
-	&.three {
-		width: 80px;
-		height: 42px;
-	}
-	&.four {
-		width: 80px;
-		height: 42px;
-	}
-	&.five {
-		width: 59px;
-		height: 47px;
-	}
-	&.six {
-		height: 45.44px;
-		width: 88.48px;
+		&.three {
+			width: 80px;
+			height: 42px;
+		}
+		&.four {
+			width: 80px;
+			height: 42px;
+		}
+		&.five {
+			width: 59px;
+			height: 47px;
+		}
+		&.six {
+			height: 45.44px;
+			width: 88.48px;
+		}
 	}
 }

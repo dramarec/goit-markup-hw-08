@@ -1,52 +1,29 @@
-%align {
-	display: flex;
-	align-items: center;
-}
-
-.header {
-	.conteiner,
-	.navigation,
-	.navigation-list,
-	.contacts-list {
-		@extend %align;
-	}
-}
-
-.navigation-list {
-	margin-left: 93px;
-
-	&__item {
-		position: relative;
+@media (min-width: 1140px) {
+	%align {
+		display: flex;
+		align-items: center;
 	}
 
-	&__item:not(:last-child) {
-		margin-right: 50px;
-	}
-	.item-current::after {
-		content: "";
-		position: absolute;
-		display: block;
-		bottom: 0;
-		height: 4px;
-		width: 100%;
-		border-radius: 2px;
-		background-color: $accent-color;
+	.header {
+		.conteiner,
+		.navigation,
+		.navigation-list,
+		.contacts-list {
+			@extend %align;
+		}
 	}
 
-	&__link {
-		display: block;
-		padding-top: 32px;
-		padding-bottom: 32px;
+	.navigation-list {
+		margin-left: 93px;
 
-		color: $title-text-color;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 1.1; /* 16 */
-		letter-spacing: 0.02em;
-		text-decoration: none;
-		transition-duration: 250ms;
-		transition-timing-function: $timing-function;
-		&::after {
+		&__item {
+			position: relative;
+		}
+
+		&__item:not(:last-child) {
+			margin-right: 50px;
+		}
+		.item-current::after {
 			content: "";
 			position: absolute;
 			display: block;
@@ -55,63 +32,88 @@
 			width: 100%;
 			border-radius: 2px;
 			background-color: $accent-color;
-			transition: transform 250ms $timing-function;
-			transform: scaleX(0);
 		}
-		&:hover::after {
-			transform: scaleX(1);
-		}
-		&.link-current,
-		&:focus,
-		&:hover {
-			outline-color: #2195f3;
-			color: $accent-color;
-		}
-	}
-}
 
-.contacts-list {
-	margin-left: auto;
+		&__link {
+			display: block;
+			padding-top: 32px;
+			padding-bottom: 32px;
 
-	&__item:not(:last-child) {
-		margin-right: 50px;
-	}
-
-	&__link {
-		display: inline-flex;
-		align-items: center;
-		padding-top: 32px;
-		padding-bottom: 32px;
-
-		color: currentColor;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 1.1; /* 16 */
-		letter-spacing: 0.02em;
-		text-decoration: none;
-		transition-duration: 250ms;
-		transition-timing-function: $timing-function;
-		&:focus,
-		&:hover {
-			outline-color: #2195f3;
-			color: $accent-color;
+			color: $title-text-color;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 1.1; /* 16 */
+			letter-spacing: 0.02em;
+			text-decoration: none;
+			transition-duration: 250ms;
+			transition-timing-function: $timing-function;
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				bottom: 0;
+				height: 4px;
+				width: 100%;
+				border-radius: 2px;
+				background-color: $accent-color;
+				transition: transform 250ms $timing-function;
+				transform: scaleX(0);
+			}
+			&:hover::after {
+				transform: scaleX(1);
+			}
+			&.link-current,
+			&:focus,
+			&:hover {
+				outline-color: #2195f3;
+				color: $accent-color;
+			}
 		}
-		&:hover .contacts-list__svg {
-			fill: #2196f3;
+	}
+
+	.contacts-list {
+		margin-left: auto;
+
+		&__item:not(:last-child) {
+			margin-right: 50px;
 		}
-	}
-	&__svg {
-		margin-right: 10px;
-		fill: $primary-text-color;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	.envelope-icon {
-		width: 16px;
-		height: 12px;
-	}
-	.smartphone-icon {
-		width: 10px;
-		height: 16px;
+
+		&__link {
+			display: inline-flex;
+			align-items: center;
+			padding-top: 32px;
+			padding-bottom: 32px;
+
+			color: currentColor;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 1.1; /* 16 */
+			letter-spacing: 0.02em;
+			text-decoration: none;
+			transition-duration: 250ms;
+			transition-timing-function: $timing-function;
+			&:focus,
+			&:hover {
+				outline-color: #2195f3;
+				color: $accent-color;
+			}
+			&:hover .contacts-list__svg {
+				fill: #2196f3;
+			}
+		}
+		&__svg {
+			margin-right: 10px;
+			fill: $primary-text-color;
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		}
+		.envelope-icon {
+			width: 16px;
+			height: 12px;
+		}
+		.smartphone-icon {
+			width: 10px;
+			height: 16px;
+		}
 	}
 }

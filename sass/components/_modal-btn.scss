@@ -1,15 +1,17 @@
-.modal-btn {
-	min-width: 200px;
-	padding: 10px 32px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	color: $hero-color;
-	border: none;
-	background-color: $accent-color;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.9; /* 30 */
-	letter-spacing: 0.06em;
-	text-decoration: none;
-	cursor: pointer;
+@media (min-width: 1140px) {
+	.modal-btn {
+		min-width: 200px;
+		padding: 10px 32px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+		color: $hero-color;
+		border: none;
+		background-color: $accent-color;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.9; /* 30 */
+		letter-spacing: 0.06em;
+		text-decoration: none;
+		cursor: pointer;
+	}
 }
