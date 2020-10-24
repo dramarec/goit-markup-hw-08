@@ -35,14 +35,14 @@ body {
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -663,10 +663,10 @@ body {
 }
 
 .subscribe__input {
+  display: block;
   font-size: 16px;
   line-height: 20px;
-  width: 450px;
-  height: 50px;
+  min-width: 450px;
   padding: 15px 16px;
   letter-spacing: 0.03em;
   background-color: #2f303a;
@@ -803,6 +803,7 @@ body {
     position: relative;
   }
   .footer-contact {
+    margin-bottom: 0;
     margin-right: 70px;
   }
   .footer-contact__list {
@@ -883,6 +884,7 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
   .subscribe .modal-btn {
     position: relative;

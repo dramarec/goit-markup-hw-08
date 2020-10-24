@@ -187,12 +187,17 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="command-list">
             <li class="command-list__card">
-              <img
-                src="./img/command/img-4.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source srcset="./img/command/desk/img-4.jpg 1x, ./img/command/desk/img@2x-4.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/command/tabl/img-4.jpg 1x, ./img/command/tabl/img@2x-4.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./img/command/mob/img-4.jpg 1x, ./img/command/mob/img@2x-4.jpg 2x" media="(min-width: 320px)">
+                  <img
+                    src="./img/command/mob/img-4.jpg"
+                    alt="Фото сотрудника"
+                    width="270"
+                    height="260"
+                  />
+              </picture>
               <div class="command-card__info">
                 <h3 class="command-card__title">Игорь Демьяненко</h3>
                 <p class="command-card__job" lang="en">Product Designer</p>
@@ -233,12 +238,18 @@
               </div>
             </li>
             <li class="command-list__card">
-              <img
-                src="./img/command/img-5.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source srcset="./img/command/desk/img-5.jpg 1x, ./img/command/desk/img@2x-5.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/command/tabl/img-5.jpg 1x, ./img/command/tabl/img@2x-5.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./img/command/mob/img-5.jpg 1x, ./img/command/mob/img@2x-5.jpg 2x" media="(min-width: 320px)">
+               <img
+                  src="./img/command/mob/img-5.jpg"
+                  alt="Фото сотрудника"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+             
               <div class="command-card__info">
                 <h3 class="command-card__title">Ольга Репина</h3>
                 <p class="command-card__job" lang="en">Frontend Developer</p>
@@ -279,12 +290,19 @@
               </div>
             </li>
             <li class="command-list__card">
-              <img
-                src="./img/command/img-6.jpg"
+              <picture class="picture">
+                <source srcset="./img/command/desk/img-6.jpg 1x, ./img/command/desk/img@2x-6.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/command/tabl/img-6.jpg 1x, ./img/command/tabl/img@2x-6.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./img/command/mob/img-6.jpg 1x, ./img/command/mob/img@2x-6.jpg 2x" media="(min-width: 320px)">
+
+               <img
+                src="./img/command/mob/img-6.jpg"
                 alt="Фото сотрудника"
                 width="270"
                 height="260"
               />
+              </picture>
+             
               <div class="command-card__info">
                 <h3 class="command-card__title">Николай Тарасов</h3>
                 <p class="command-card__job" lang="en">Marketing</p>
@@ -326,12 +344,34 @@
               
             </li>
             <li class="command-list__card">
-              <img
-                src="./img/command/img-7.jpg"
+                    <!-- <picture class="picture">
+                      <source srcset="./images/img-desktop.webp 1x, ./images/img-desktop@2x.webp 2x" media="(min-width: 1200px)"
+                        type="image/webp">
+                      <source srcset="./images/img-desktop.jpg 1x, ./images/img-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                    
+                      <source srcset="./images/img-tablet.webp 1x, ./images/img-tablet@2x.webp 2x" media="(min-width: 768px)"
+                        type="image/webp">
+                      <source srcset="./images/img-tablet.jpg 1x, ./images/img-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    
+                      <source srcset="./images/img-mobile.webp 1x, ./images/img-mobile@2x.webp 2x" media="(min-width: 320px)"
+                        type="image/webp">
+                      <source srcset="./images/img-mobile.jpg 1x, ./images/img-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                    
+                      <img src="./images/img-mobile.jpg" alt="retina picture" class="picture-img">
+                    </picture> -->
+              <picture class="picture">
+                <source srcset="./img/command/desk/img-7.jpg 1x, ./img/command/desk/img@2x-7.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/command/tabl/img-7.jpg 1x, ./img/command/tabl/img@2x-7.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./img/command/mob/img-7.jpg 1x, ./img/command/mob/img@2x-7.jpg 2x" media="(min-width: 320px)">
+
+               <img
+                src="./img/command/mob/img-7.jpg"
                 alt="Фото сотрудника"
                 width="270"
                 height="260"
               />
+              </picture>
+             
               <div class="command-card__info">
                 <h3 class="command-card__title">Михаил Ермаков</h3>
                 <p class="command-card__job" lang="en">UI Designer</p>
