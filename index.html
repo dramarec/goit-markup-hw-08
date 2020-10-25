@@ -17,16 +17,17 @@
   <body>
 
     <!-- header -->
+
     <header class="header">
+
       <div class="conteiner">
-        
-        <!-- navigation -->
+
         <a class="logotip" href="./index.html">
           <span class="logotip-accent">Web</span>Studio
         </a>
 
-        <button type="button" 
-          class="menu-button is-open"
+        <button class="menu-button"
+          type="button" 
           aria-extended="false" 
           aria-controls="menu-container"
           data-menu-button >
@@ -36,7 +37,8 @@
           </svg>
         </button>
 
-        <div class="menu-conteiner is-open" id="menu-conteiner" data-menu>
+        <div class="menu-conteiner" id="menu-conteiner" data-menu>
+
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-list__item item-current">
@@ -50,6 +52,7 @@
               </li>
             </ul>
           </nav>
+
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="malto:info@devstudio.com">
@@ -70,6 +73,7 @@
               </a>
             </li>
           </ul>
+
         </div>
 
       </div>
@@ -154,13 +158,12 @@
           <ul class="engage__list">
             <li>
               <div class="engage-pic">
-                 <img
-                src="./img/engage/img.jpg"
-                alt="Робочий стол, мужские руки печатают
-                          на клавиатуре"
-                width="370"
-                height="294"
-                />
+                <picture class="picture">
+                  <source srcset="./img/engage/img.jpg 1x, 
+                                ./img/engage/img@2x.jpg 2x" media="(min-width: 1200px)">
+                  <img src="./img/engage/img.jpg" alt="Робочий стол, мужские руки печатают
+                                            на клавиатуре" width="370" height="294" />
+                </picture>
                 <div class="engage-pic__title">
                   <p>Десктопные приложения</p>
                 </div>
@@ -168,13 +171,13 @@
             </li>
             <li>
               <div class="engage-pic">
-                <img
-                  src="./img/engage/img-2.jpg"
-                  alt="Женские руки, в левой руке держит
-                            телефон, правая рука на трекпаде ноутбука"
-                  width="370"
-                  height="294"
-                />
+                <picture class="picture">
+                  <source srcset="./img/engage/img-1.jpg 1x, 
+                              ./img/engage/img@2x-1.jpg 2x" media="(min-width: 1200px)">
+                  <img src="./img/engage/img-1.jpg" alt="Женские руки, в левой руке держит
+                                              телефон, правая рука на трекпаде ноутбука" width="370" height="294" />
+                </picture>
+                
                 <div class="engage-pic__title">
                   <p>Мобильные приложения</p>
                 </div>
@@ -182,13 +185,12 @@
             </li>
             <li>
               <div class="engage-pic">
-                <img
-                  src="./img/engage/img-3.jpg"
-                  alt="В левой руке планшет, в правой
-                            руке ручка для планшета"
-                  width="370"
-                  height="294"
-                /> 
+                <picture class="picture">
+                  <source srcset="./img/engage/img-2.jpg 1x, 
+                    ./img/engage/img@2x-2.jpg 2x" media="(min-width: 1200px)">
+                  <img src="./img/engage/img-2.jpg" alt="В левой руке планшет, в правой
+                    руке ручка для планшета" width="370" height="294" />
+                </picture>
                 <div class="engage-pic__title">
                   <p>Дизайнерские решения</p>
                 </div>
@@ -475,66 +477,68 @@
     <footer class="footer">
       <div class="conteiner">
 
-        <!-- footer contact -->
-        <div class="footer-contact">
-          <a href="./index.html" class="logotip">
-            <span class="logotip-accent">Web</span
-            ><span class="footer__logotip-color">Studio</span>
-          </a>
-          <address class="footer-contact__address">
-            <ul class="footer-contact__list list">
-              <li class="footer-contact__item">
-                <a class="footer-contact__link" href="https://goo.gl/maps/K1fkCE5pKCQjTxw7A"  target="_blank">
-                  <span class="footer-contact__address">г. Киев, пр-т Леси Украинки, 26</span></a>
-              </li>
-              <li class="footer-contact__item">
-                <a class="footer-contact__link" href="malto:info@devstudio.com" >info@example.com</a>
-              </li>
-              <li class="footer-contact__item">
-                <a class="footer-contact__link" href="tel:+380961111111" >+38 099 111 11 11</a>
-              </li>
-            </ul>
-          </address>
+        <div class="footer-tabl">
+          <!-- footer contact -->
+            <div class="footer-contact">
+              <a href="./index.html" class="logotip">
+                <span class="logotip-accent">Web</span><span class="footer__logotip-color">Studio</span>
+              </a>
+              <address class="footer-contact__address">
+                <ul class="footer-contact__list list">
+                  <li class="footer-contact__item">
+                    <a class="footer-contact__link" href="https://goo.gl/maps/K1fkCE5pKCQjTxw7A" target="_blank">
+                      <span class="footer-contact__address">г. Киев, пр-т Леси Украинки, 26</span></a>
+                  </li>
+                  <li class="footer-contact__item">
+                    <a class="footer-contact__link" href="malto:info@devstudio.com">info@example.com</a>
+                  </li>
+                  <li class="footer-contact__item">
+                    <a class="footer-contact__link" href="tel:+380961111111">+38 099 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            
+            <!-- join-conteiner -->
+            <div class="footer-join">
+              <b class="join">присоединяйтесь</b>
+              <ul class="footer-social list">
+                <li class="item">
+                  <a class="footer-link" href="https://www.instagram.com/" target="_blank">
+                    <svg class="footer-icon">
+                      <use href="./svg/symbol-defs.svg#icon-instagram">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="footer-link" href="https://www.twitter.com/" target="_blank">
+                    <svg class="footer-icon">
+                      <use href="./svg/symbol-defs.svg#icon-twitter">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="footer-link" href="https://www.facebook.com/" target="_blank">
+                    <svg class="footer-icon">
+                      <use href="./svg/symbol-defs.svg#icon-facebook">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="footer-link" href="https://www.linkedin.com/" target="_blank">
+                    <svg class="footer-icon">
+                      <use href="./svg/symbol-defs.svg#icon-linkedin">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
         </div>
-
-        <!-- join-conteiner -->
-        <div class="footer-join">
-          <b class="join">присоединяйтесь</b>
-          <ul class="footer-social list">
-            <li class="item">
-              <a class="footer-link" href="https://www.instagram.com/" target="_blank">
-                <svg class="footer-icon">
-                  <use href="./svg/symbol-defs.svg#icon-instagram">
-                  </use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="footer-link" href="https://www.twitter.com/" target="_blank">
-                <svg class="footer-icon">
-                  <use href="./svg/symbol-defs.svg#icon-twitter">
-                  </use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="footer-link" href="https://www.facebook.com/" target="_blank">
-                <svg class="footer-icon">
-                  <use href="./svg/symbol-defs.svg#icon-facebook">
-                  </use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="footer-link" href="https://www.linkedin.com/" target="_blank">
-                <svg class="footer-icon">
-                  <use href="./svg/symbol-defs.svg#icon-linkedin">
-                  </use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+     
 
         <!-- subscribe-form -->
         <form class="subscribe">

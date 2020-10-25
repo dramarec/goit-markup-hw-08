@@ -1,4 +1,4 @@
-.navigation .logotip,
+.logotip,
 .footer .logotip {
 	display: block;
 	font-family: Raleway, sans-serif;
@@ -22,7 +22,7 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-	.navigation .logotip,
+	.logotip,
 	.footer .logotip {
 		padding-top: 16px;
 		padding-bottom: 16px;
@@ -31,8 +31,8 @@
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1139px) {
-	.navigation .logotip,
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.logotip,
 	.footer .logotip {
 		padding-top: 26px;
 		padding-bottom: 26px;
@@ -41,8 +41,8 @@
 	}
 }
 
-@media screen and (min-width: 1140px) {
-	.navigation .logotip,
+@media screen and (min-width: 1200px) {
+	.logotip,
 	.footer .logotip {
 		padding-top: 24px;
 		padding-bottom: 25px;

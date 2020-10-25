@@ -4,6 +4,14 @@
 	margin-left: auto;
 	margin-right: auto;
 	outline: 1px solid rgb(255, 0, 0);
+	.header &,
+	.hero & {
+		display: flex;
+		align-items: center;
+	}
+	.hero & {
+		flex-direction: column;
+	}
 
 	@media screen and (min-width: 480px) {
 		width: 480px;
@@ -11,15 +19,6 @@
 
 	@media screen and (min-width: 768px) {
 		width: 768px;
-
-		.header &,
-		.hero & {
-			display: flex;
-			align-items: center;
-		}
-		.hero & {
-			flex-direction: column;
-		}
 	}
 
 	@media screen and (min-width: 1200px) {
