@@ -1,100 +1,59 @@
 .header {
-	.conteiner,
-	.navigation,
-	.navigation-list {
+	position: relative;
+	.navigation-list,
+	.contacts-list {
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+}
+
+.navigation {
+	@media screen and (max-width: 767px) {
 		display: flex;
 		align-items: center;
-	}
-}
-.navigation-list {
-	opacity: 0;
-	display: none;
-	&__item {
-		position: relative;
-	}
-
-	&__link {
-		display: block;
-		// padding-top: 32px;
-		// padding-bottom: 32px;
-
-		color: $title-text-color;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 1.1; /* 16 */
-		letter-spacing: 0.02em;
-		text-decoration: none;
-		transition-duration: 250ms;
-		transition-timing-function: $timing-function;
-		&::after {
-			content: "";
-			position: absolute;
+		justify-content: space-between;
+		.menu-button {
+			display: inline-flex;
+			margin: 0;
+			padding: 0;
+			border: none;
+			background-color: transparent;
+			.icon-close {
+				display: none;
+			}
+		}
+		// .menu-button .icon-close {
+		// 	display: none;
+		// }
+		.menu-button.is-open .icon-close {
 			display: block;
-			bottom: 0;
-			height: 4px;
-			width: 100%;
-			border-radius: 2px;
-			background-color: $accent-color;
-			transition: transform 250ms $timing-function;
-			transform: scaleX(0);
 		}
-		&:hover::after {
-			transform: scaleX(1);
+		.menu-button.is-open .icon-menu {
+			display: none;
 		}
-		&.link-current,
-		&:focus,
-		&:hover {
-			outline-color: #2195f3;
-			color: $accent-color;
+		.menu-conteiner {
+			display: none;
+			position: absolute;
+			top: 100%;
+			border-top: 1px solid #ececec;
+			width: 480px;
+			height: 453px;
+			background-color: #fff;
+			padding: 60px 0;
+			text-align: center;
+			&.is-open {
+				display: block;
+			}
 		}
 	}
 }
 
-.contacts-list {
-	opacity: 0;
-
-	&__item:not(:last-child) {
-	}
-
-	&__link {
-		display: inline-flex;
-		align-items: center;
-		// padding-top: 32px;
-		// padding-bottom: 32px;
-
-		color: currentColor;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 1.1; /* 16 */
-		letter-spacing: 0.02em;
-		text-decoration: none;
-		transition-duration: 250ms;
-		transition-timing-function: $timing-function;
-		&:focus,
-		&:hover {
-			outline-color: #2195f3;
-			color: $accent-color;
-		}
-		&:hover .contacts-list__svg {
-			fill: #2196f3;
-		}
-	}
-	&__svg {
-		// margin-right: 10px;
-		fill: $primary-text-color;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	.envelope-icon {
-		width: 16px;
-		height: 12px;
-	}
-	.smartphone-icon {
-		width: 10px;
-		height: 16px;
+.menu-button {
+	@media screen and (min-width: 768px) {
+		display: none;
 	}
 }
-
 @media screen and (min-width: 768px) {
 	.header {
 		.conteiner,

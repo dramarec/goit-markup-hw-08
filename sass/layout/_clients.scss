@@ -1,16 +1,12 @@
 .clients {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
 
-	// &-list {
-	// 	display: flex;
-	// 	flex-wrap: wrap;
-	// 	margin: -15px;
-	// }
-
-	// &-list .clients-item {
-	// 	margin: 15px;
-	// }
 	&-link {
 		display: flex;
 		justify-content: center;
@@ -18,7 +14,7 @@
 		color: #afb1b8;
 		border: 1px solid #afb1b8;
 		border-radius: 4px;
-		width: 210px;
+		max-width: 210px;
 		height: 90px;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,81 +56,23 @@
 		width: 88.48px;
 	}
 }
+
 @media screen and (max-width: 767px) {
 	.clients {
-		&-list {
-			display: flex;
-			flex-wrap: wrap;
-			margin: -15px;
-		}
-
 		&-list .clients-item {
+			width: calc((100% - 4 * 15px) / 2);
 			margin: 15px;
 		}
 	}
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 	.clients {
-		padding-top: 60px;
-		padding-bottom: 60px;
-
-		&-list {
-			display: flex;
-			flex-wrap: wrap;
-			// flex-direction: row;
-			// justify-content: center;
-		}
-		&-list .clients-item:not(:last-child) {
-			margin-right: 0px;
+		&-list .clients-item {
+			width: calc((100% - 6 * 15px) / 3);
+			margin: 15px;
 		}
 		&-link {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: #afb1b8;
-			border: 1px solid #afb1b8;
-			border-radius: 4px;
 			width: 226px;
-			height: 90px;
-			/* transition-property: background-color; */
-			transition-duration: 250ms;
-			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-			&:hover {
-				border: 1px solid #2196f3;
-			}
-			&:hover .client-logo {
-				color: $accent-color;
-			}
-		}
-	}
-
-	.client-logo {
-		fill: currentColor;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		&.one {
-			width: 44px;
-			height: 49px;
-		}
-		&.two {
-			width: 41px;
-			height: 43px;
-		}
-		&.three {
-			width: 80px;
-			height: 42px;
-		}
-		&.four {
-			width: 80px;
-			height: 42px;
-		}
-		&.five {
-			width: 59px;
-			height: 47px;
-		}
-		&.six {
-			height: 45.44px;
-			width: 88.48px;
 		}
 	}
 }
@@ -151,23 +89,22 @@
 			margin-right: 30px;
 		}
 		&-link {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: #afb1b8;
-			border: 1px solid #afb1b8;
-			border-radius: 4px;
+			// display: flex;
+			// justify-content: center;
+			// align-items: center;
+			// color: #afb1b8;
+			// border: 1px solid #afb1b8;
+			// border-radius: 4px;
 			width: 170px;
-			height: 90px;
-			/* transition-property: background-color; */
-			transition-duration: 250ms;
-			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-			&:hover {
-				border: 1px solid #2196f3;
-			}
-			&:hover .client-logo {
-				color: $accent-color;
-			}
+			// height: 90px;
+			// transition-duration: 250ms;
+			// transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			// &:hover {
+			// 	border: 1px solid #2196f3;
+			// }
+			// &:hover .client-logo {
+			// 	color: $accent-color;
+			// }
 		}
 	}
 
@@ -175,29 +112,29 @@
 		fill: currentColor;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		&.one {
-			width: 44px;
-			height: 49px;
-		}
-		&.two {
-			width: 41px;
-			height: 43px;
-		}
-		&.three {
-			width: 80px;
-			height: 42px;
-		}
-		&.four {
-			width: 80px;
-			height: 42px;
-		}
-		&.five {
-			width: 59px;
-			height: 47px;
-		}
-		&.six {
-			height: 45.44px;
-			width: 88.48px;
-		}
+		// &.one {
+		// 	width: 44px;
+		// 	height: 49px;
+		// }
+		// &.two {
+		// 	width: 41px;
+		// 	height: 43px;
+		// }
+		// &.three {
+		// 	width: 80px;
+		// 	height: 42px;
+		// }
+		// &.four {
+		// 	width: 80px;
+		// 	height: 42px;
+		// }
+		// &.five {
+		// 	width: 59px;
+		// 	height: 47px;
+		// }
+		// &.six {
+		// 	height: 45.44px;
+		// 	width: 88.48px;
+		// }
 	}
 }

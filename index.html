@@ -15,48 +15,65 @@
 </head>
 
   <body>
+
     <!-- header -->
     <header class="header">
       <div class="conteiner">
+        
         <!-- navigation -->
-        <nav class="navigation">
-          <a href="./index.html" class="logotip">
-            <span class="logotip-accent">Web</span>Studio
-          </a>
-          <ul class="navigation-list">
-            <li class="navigation-list__item item-current">
-              <a class="navigation-list__link link-current" href="./index.html" >Студия</a>
+        <a class="logotip" href="./index.html">
+          <span class="logotip-accent">Web</span>Studio
+        </a>
+
+        <button type="button" 
+          class="menu-button is-open"
+          aria-extended="false" 
+          aria-controls="menu-container"
+          data-menu-button >
+          <svg width="40" height="40" aria-label="Перключатель мобильного меню">
+            <use class="icon-close" href="./svg/symbol-defs.svg#icon-close_40px"></use>
+            <use class="icon-menu" href="./svg/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+
+        <div class="menu-conteiner is-open" id="menu-conteiner" data-menu>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list__item item-current">
+                <a class="navigation-list__link link-current" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="malto:info@devstudio.com">
+                <svg class="contacts-list__svg envelope-icon">
+                  <use href="./svg/symbol-defs.svg#icon-envelope">
+                  </use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="navigation-list__item">
-              <a class="navigation-list__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation-list__item">
-              <a class="navigation-list__link" href="">Контакты</a>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="tel:+380961111111">
+                <svg class="contacts-list__svg smartphone-icon">
+                  <use href="./svg/symbol-defs.svg#icon-smartphone">
+                  </use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="malto:info@devstudio.com">
-              <svg class="contacts-list__svg envelope-icon">
-                <use href="./svg/symbol-defs.svg#icon-envelope">
-                </use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="tel:+380961111111">
-              <svg class="contacts-list__svg smartphone-icon">
-                <use href="./svg/symbol-defs.svg#icon-smartphone">
-                </use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
+
       </div>
-    </header>
+    </header> 
     
     <main>
       
@@ -188,14 +205,16 @@
           <ul class="command-list">
             <li class="command-list__card">
               <picture class="picture">
-                <source srcset="./img/command/desk/img-4.jpg 1x, ./img/command/desk/img@2x-4.jpg 2x" media="(min-width: 1200px)">
-                <source srcset="./img/command/tabl/img-4.jpg 1x, ./img/command/tabl/img@2x-4.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./img/command/desk/img-4.jpg 1x, 
+                ./img/command/desk/img@2x-4.jpg 2x" 
+                media="(min-width: 1200px)">
+                <source srcset="./img/command/tabl/img-4.jpg 1x, 
+                ./img/command/tabl/img@2x-4.jpg 2x" 
+                media="(min-width: 768px)">
                 <source srcset="./img/command/mob/img-4.jpg 1x, ./img/command/mob/img@2x-4.jpg 2x" media="(min-width: 320px)">
                   <img
                     src="./img/command/mob/img-4.jpg"
                     alt="Фото сотрудника"
-                    width="270"
-                    height="260"
                   />
               </picture>
               <div class="command-card__info">
@@ -245,8 +264,6 @@
                <img
                   src="./img/command/mob/img-5.jpg"
                   alt="Фото сотрудника"
-                  width="270"
-                  height="260"
                 />
               </picture>
              
@@ -298,8 +315,6 @@
                <img
                 src="./img/command/mob/img-6.jpg"
                 alt="Фото сотрудника"
-                width="270"
-                height="260"
               />
               </picture>
              
@@ -344,21 +359,6 @@
               
             </li>
             <li class="command-list__card">
-                    <!-- <picture class="picture">
-                      <source srcset="./images/img-desktop.webp 1x, ./images/img-desktop@2x.webp 2x" media="(min-width: 1200px)"
-                        type="image/webp">
-                      <source srcset="./images/img-desktop.jpg 1x, ./images/img-desktop@2x.jpg 2x" media="(min-width: 1200px)">
-                    
-                      <source srcset="./images/img-tablet.webp 1x, ./images/img-tablet@2x.webp 2x" media="(min-width: 768px)"
-                        type="image/webp">
-                      <source srcset="./images/img-tablet.jpg 1x, ./images/img-tablet@2x.jpg 2x" media="(min-width: 768px)">
-                    
-                      <source srcset="./images/img-mobile.webp 1x, ./images/img-mobile@2x.webp 2x" media="(min-width: 320px)"
-                        type="image/webp">
-                      <source srcset="./images/img-mobile.jpg 1x, ./images/img-mobile@2x.jpg 2x" media="(min-width: 320px)">
-                    
-                      <img src="./images/img-mobile.jpg" alt="retina picture" class="picture-img">
-                    </picture> -->
               <picture class="picture">
                 <source srcset="./img/command/desk/img-7.jpg 1x, ./img/command/desk/img@2x-7.jpg 2x" media="(min-width: 1200px)">
                 <source srcset="./img/command/tabl/img-7.jpg 1x, ./img/command/tabl/img@2x-7.jpg 2x" media="(min-width: 768px)">
@@ -367,8 +367,6 @@
                <img
                 src="./img/command/mob/img-7.jpg"
                 alt="Фото сотрудника"
-                width="270"
-                height="260"
               />
               </picture>
              
@@ -610,9 +608,9 @@
           <button class="modal-btn" type="submit">Отправить</button>
         </form>
       </div>
-    
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
