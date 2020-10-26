@@ -1102,7 +1102,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .feature-list__description:nth-child(-n + 3) {
+  .feature-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1125,7 +1125,7 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .feature-list__description {
+  .feature-list__item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
 }
