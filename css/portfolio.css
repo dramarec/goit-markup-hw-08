@@ -376,7 +376,7 @@ body {
     display: block;
   }
   .contacts-list {
-    margin-left: 280px;
+    margin-left: 270px;
   }
   .contacts-list__item:not(:last-child) {
     margin-bottom: 0;
@@ -725,7 +725,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe .modal-btn {
@@ -811,7 +816,7 @@ body {
     margin-right: 70px;
   }
   .footer .footer-join {
-    margin-right: 93px;
+    margin-right: 90px;
   }
   .footer .footer-social .item + .item {
     margin-left: 10px;
