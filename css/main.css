@@ -188,6 +188,13 @@ body {
   z-index: 1;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
 .modal .close-btn {
   position: absolute;
   top: 8px;
@@ -222,7 +229,8 @@ body {
 }
 
 .form .modal-btn {
-  margin-left: 124px;
+  display: block;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -434,9 +442,6 @@ body {
     width: 448px;
     margin-bottom: 12px;
     color: #212121;
-  }
-  .form .modal-btn {
-    margin-left: 124px;
   }
   .form-group {
     display: flex;
