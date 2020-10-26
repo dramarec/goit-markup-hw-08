@@ -329,6 +329,7 @@ body {
   .header .navigation-list {
     display: flex;
     align-items: center;
+    flex-grow: 1;
   }
   .navigation-list {
     margin-left: 88px;
@@ -342,9 +343,6 @@ body {
   .navigation-list__link {
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-  .contacts-list {
-    margin-left: 84px;
   }
   .contacts-list__item:not(:last-child) {
     margin-bottom: 10px;
@@ -374,9 +372,6 @@ body {
   }
   .navigation-list__link {
     display: block;
-  }
-  .contacts-list {
-    margin-left: 270px;
   }
   .contacts-list__item:not(:last-child) {
     margin-bottom: 0;
@@ -808,15 +803,11 @@ body {
   .footer .conteiner {
     display: flex;
     align-items: baseline;
-    position: relative;
     text-align: left;
   }
   .footer .footer-contact {
     margin-bottom: 0;
     margin-right: 70px;
-  }
-  .footer .footer-join {
-    margin-right: 90px;
   }
   .footer .footer-social .item + .item {
     margin-left: 10px;
@@ -829,6 +820,9 @@ body {
   .footer .footer-social .footer-icon {
     width: 20px;
     height: 20px;
+  }
+  .footer .subscribe {
+    margin-left: auto;
   }
   .footer .subscribe__input {
     width: 358px;

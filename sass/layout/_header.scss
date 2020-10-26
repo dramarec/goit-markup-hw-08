@@ -172,6 +172,7 @@
 		.navigation-list {
 			display: flex;
 			align-items: center;
+			flex-grow: 1;
 		}
 	}
 	.navigation-list {
@@ -192,7 +193,7 @@
 	}
 
 	.contacts-list {
-		margin-left: 84px;
+		// margin-left: 84px;
 
 		&__item:not(:last-child) {
 			margin-bottom: 10px;
@@ -225,35 +226,15 @@
 	.navigation-list {
 		margin-left: 93px;
 
-		// &__item {
-		// 	position: relative;
-		// }
-
-		// &__item:not(:last-child) {
-		// 	margin-right: 50px;
-		// }
-		// .item-current::after {
-		// 	content: "";
-		// 	position: absolute;
-		// 	display: block;
-		// 	bottom: 0;
-		// 	height: 4px;
-		// 	width: 100%;
-		// 	border-radius: 2px;
-		// 	background-color: $accent-color;
-		// }
-
 		&__link {
 			display: block;
-			// padding-top: 32px;
-			// padding-bottom: 32px;
 		}
 	}
 
 	.contacts-list {
 		// ???
 		// margin-left: auto;
-		margin-left: 270px;
+		// margin-left: 270px;
 
 		&__item:not(:last-child) {
 			margin-bottom: 0;

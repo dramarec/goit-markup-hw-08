@@ -183,19 +183,12 @@
 		.conteiner {
 			display: flex;
 			align-items: baseline;
-			position: relative;
 			text-align: left;
 		}
 
 		.footer-contact {
 			margin-bottom: 0;
 			margin-right: 70px;
-		}
-
-		.footer-join {
-			// ???
-			// margin-right: auto;
-			margin-right: 90px;
 		}
 
 		.footer-social {
@@ -213,6 +206,9 @@
 			}
 		}
 
+		.subscribe {
+			margin-left: auto;
+		}
 		.subscribe__input {
 			width: 358px;
 			margin-right: 12px;
