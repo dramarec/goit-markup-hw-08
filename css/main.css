@@ -1117,7 +1117,7 @@ body {
     max-width: 354px;
   }
   .feature-list__icon {
-    width: 354px;
+    max-width: 354px;
   }
   .feature-list .section-title {
     text-align: left;
@@ -1136,10 +1136,10 @@ body {
     padding-bottom: 94px;
   }
   .feature-list__item {
-    width: 270px;
+    max-width: 270px;
   }
   .feature-list__icon {
-    width: 270px;
+    max-width: 270px;
   }
 }
 

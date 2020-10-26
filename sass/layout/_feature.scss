@@ -49,7 +49,7 @@
 			max-width: 354px;
 		}
 		&__icon {
-			width: 354px;
+			max-width: 354px;
 		}
 		.section-title {
 			text-align: left;
@@ -71,10 +71,10 @@
 
 	.feature-list {
 		&__item {
-			width: 270px;
+			max-width: 270px;
 		}
 		&__icon {
-			width: 270px;
+			max-width: 270px;
 		}
 	}
 }
