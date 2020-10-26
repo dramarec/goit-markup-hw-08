@@ -198,16 +198,16 @@
 		&__item:not(:last-child) {
 			margin-right: 50px;
 		}
-		.item-current::after {
-			content: "";
-			position: absolute;
-			display: block;
-			bottom: 0;
-			height: 4px;
-			width: 100%;
-			border-radius: 2px;
-			background-color: $accent-color;
-		}
+		// .item-current::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	display: block;
+		// 	bottom: 0;
+		// 	height: 4px;
+		// 	width: 100%;
+		// 	border-radius: 2px;
+		// 	background-color: $accent-color;
+		// }
 
 		&__link {
 			// display: block;
@@ -224,17 +224,17 @@
 		}
 
 		&__link {
-			display: inline-flex;
-			align-items: center;
+			// display: inline-flex;
+			// align-items: center;
 
-			color: currentColor;
-			font-weight: 500;
+			// color: currentColor;
+			// font-weight: 500;
 			font-size: 12px;
 			line-height: 1.16; /* 14 */
-			letter-spacing: 0.02em;
-			text-decoration: none;
-			transition-duration: 250ms;
-			transition-timing-function: $timing-function;
+			// letter-spacing: 0.02em;
+			// text-decoration: none;
+			// transition-duration: 250ms;
+			// transition-timing-function: $timing-function;
 			&:focus,
 			&:hover {
 				outline-color: #2195f3;
@@ -250,8 +250,6 @@
 @media screen and (min-width: 1200px) {
 	.header {
 		.conteiner,
-		.navigation,
-		.navigation-list,
 		.contacts-list {
 			display: flex;
 			align-items: center;
@@ -260,32 +258,33 @@
 	.navigation-list {
 		margin-left: 93px;
 
-		&__item {
-			position: relative;
-		}
+		// &__item {
+		// 	position: relative;
+		// }
 
-		&__item:not(:last-child) {
-			margin-right: 50px;
-		}
-		.item-current::after {
-			content: "";
-			position: absolute;
-			display: block;
-			bottom: 0;
-			height: 4px;
-			width: 100%;
-			border-radius: 2px;
-			background-color: $accent-color;
-		}
+		// &__item:not(:last-child) {
+		// 	margin-right: 50px;
+		// }
+		// .item-current::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	display: block;
+		// 	bottom: 0;
+		// 	height: 4px;
+		// 	width: 100%;
+		// 	border-radius: 2px;
+		// 	background-color: $accent-color;
+		// }
 
 		&__link {
 			display: block;
-			padding-top: 32px;
-			padding-bottom: 32px;
+			// padding-top: 32px;
+			// padding-bottom: 32px;
 		}
 	}
 
 	.contacts-list {
+		// ???
 		// margin-left: auto;
 		margin-left: 280px;
 

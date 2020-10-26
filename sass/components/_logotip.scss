@@ -3,7 +3,6 @@
 	display: block;
 	font-family: Raleway, sans-serif;
 	color: $title-text-color;
-
 	font-weight: 700;
 	letter-spacing: 0.03em;
 	text-decoration: none;
@@ -17,13 +16,12 @@
 }
 
 .footer__logotip-color {
-	// outline-color: #2195f3;
+	outline-color: #2195f3;
 	color: $hero-color;
 }
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
-	.logotip,
-	.footer .logotip {
+@media screen and (max-width: 767px) {
+	.logotip {
 		padding-top: 16px;
 		padding-bottom: 16px;
 		font-size: 24px;
@@ -32,25 +30,21 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-	.logotip,
-	.footer .logotip {
+	.logotip {
 		padding-top: 26px;
 		padding-bottom: 26px;
-		font-size: 24px;
+		font-size: 26px;
 		line-height: 1.2; /* 28 */
 	}
 }
 
+.footer .logotip {
+	padding: 0;
+	margin-bottom: 20px;
+}
 @media screen and (min-width: 1200px) {
-	.logotip,
 	.footer .logotip {
-		padding-top: 24px;
-		padding-bottom: 25px;
 		font-size: 26px;
 		line-height: 1.2; /* 31 */
-	}
-	.footer .logotip {
-		padding-top: 0;
-		padding-bottom: 20px;
 	}
 }

@@ -1,9 +1,9 @@
 .conteiner {
+	// outline: 1px solid rgb(255, 0, 0);
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	outline: 1px solid rgb(255, 0, 0);
 	.header &,
 	.hero & {
 		display: flex;
